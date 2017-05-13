@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - FBSDKCoreKit (4.21.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.21.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.21.0):
+    - FBSDKCoreKit
+  - Kingfisher (3.6.2)
+  - ObjectMapper (2.2.5)
+  - Socket.IO-Client-Swift (8.3.3)
+  - SwiftyJSON (3.1.4)
+  - TextFieldEffects (1.3.2)
+  - TTRangeSlider (1.0.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Crashlytics
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Kingfisher
+  - Socket.IO-Client-Swift
+  - SwiftyJSON
+  - TextFieldEffects
+  - TTRangeSlider
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  FBSDKCoreKit: 8a372ab194b5c7c26355c1920ef52dbeb44bc222
+  FBSDKLoginKit: a1a5f4b4ac445823a020fbeeaf5f03714a67ff9c
+  FBSDKShareKit: 649a7acfd01a3e056a33994c1bfbb997814cc8a2
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  Socket.IO-Client-Swift: a2faffdbde89c63aebc5d631041530c1068b02b8
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
+  TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
+
+PODFILE CHECKSUM: 88bae70da4f1ae0c85076124e4e272e05e4bd13f
+
+COCOAPODS: 1.2.1

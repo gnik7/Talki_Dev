@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Light.otf">
+            <string>SFUIText-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IZProfileImagesCollectionCell" customModule="Talki" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IZProfileImagesCollectionCell" id="8Qi-Wt-0sI" customClass="IZProfileImagesCollectionCell" customModule="Talki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_image_dash" translatesAutoresizingMaskIntoConstraints="NO" id="vkb-bp-goG">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_image_camera" translatesAutoresizingMaskIntoConstraints="NO" id="bTM-st-sEV">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bTM-st-sEV" secondAttribute="height" multiplier="1:1" id="aKc-Fv-ayj"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4W-aa-2lb">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxp-qG-PIn">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="trashButtonPressed:" destination="8Qi-Wt-0sI" eventType="touchUpInside" id="lO9-K8-tay"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jxp-qG-PIn" firstAttribute="top" secondItem="M4W-aa-2lb" secondAttribute="top" id="RUO-Ne-wmS"/>
+                            <constraint firstAttribute="trailing" secondItem="jxp-qG-PIn" secondAttribute="trailing" id="ayd-Xc-ckQ"/>
+                            <constraint firstAttribute="bottom" secondItem="jxp-qG-PIn" secondAttribute="bottom" id="brt-zm-uWC"/>
+                            <constraint firstItem="jxp-qG-PIn" firstAttribute="leading" secondItem="M4W-aa-2lb" secondAttribute="leading" id="lZ4-mr-kIZ"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_trash" translatesAutoresizingMaskIntoConstraints="NO" id="BO0-BF-21o">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BO0-BF-21o" secondAttribute="height" multiplier="1:1" id="Bjt-lv-qDq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nh-BT-bZZ">
+                        <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI  Text" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pR5-Yq-29h">
+                        <color key="color" red="0.91764705879999997" green="0.39607843139999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BO0-BF-21o" firstAttribute="top" secondItem="8Qi-Wt-0sI" secondAttribute="top" constant="15" id="1TV-D0-sac"/>
+                <constraint firstAttribute="trailing" secondItem="BO0-BF-21o" secondAttribute="trailing" constant="15" id="DXj-gJ-cUj"/>
+                <constraint firstItem="bTM-st-sEV" firstAttribute="centerY" secondItem="8Qi-Wt-0sI" secondAttribute="centerY" id="Jlw-pJ-KQI"/>
+                <constraint firstItem="BO0-BF-21o" firstAttribute="height" secondItem="8Qi-Wt-0sI" secondAttribute="height" multiplier="0.15" id="Kez-vv-PAF"/>
+                <constraint firstItem="pR5-Yq-29h" firstAttribute="centerX" secondItem="8Qi-Wt-0sI" secondAttribute="centerX" id="QDY-Nf-5TE"/>
+                <constraint firstItem="M4W-aa-2lb" firstAttribute="top" secondItem="BO0-BF-21o" secondAttribute="top" constant="-7" id="dEE-Mi-s8e"/>
+                <constraint firstItem="pR5-Yq-29h" firstAttribute="centerY" secondItem="8Qi-Wt-0sI" secondAttribute="centerY" id="fbB-vj-rbR"/>
+                <constraint firstItem="M4W-aa-2lb" firstAttribute="trailing" secondItem="BO0-BF-21o" secondAttribute="trailing" constant="7" id="ivs-eX-7GK"/>
+                <constraint firstItem="vkb-bp-goG" firstAttribute="top" secondItem="8Qi-Wt-0sI" secondAttribute="top" constant="1" id="log-W7-VEu"/>
+                <constraint firstItem="M4W-aa-2lb" firstAttribute="leading" secondItem="BO0-BF-21o" secondAttribute="leading" constant="-7" id="pJ3-Sw-4zo"/>
+                <constraint firstAttribute="trailing" secondItem="vkb-bp-goG" secondAttribute="trailing" constant="1" id="rGd-I2-2sU"/>
+                <constraint firstItem="bTM-st-sEV" firstAttribute="centerX" secondItem="8Qi-Wt-0sI" secondAttribute="centerX" id="rj9-gD-b1b"/>
+                <constraint firstItem="bTM-st-sEV" firstAttribute="height" secondItem="8Qi-Wt-0sI" secondAttribute="height" multiplier="0.35" id="uxh-sc-9qw"/>
+                <constraint firstItem="8Nh-BT-bZZ" firstAttribute="centerX" secondItem="8Qi-Wt-0sI" secondAttribute="centerX" id="wCf-ck-i9Q"/>
+                <constraint firstItem="vkb-bp-goG" firstAttribute="leading" secondItem="8Qi-Wt-0sI" secondAttribute="leading" constant="1" id="wPG-Zr-AMM"/>
+                <constraint firstItem="M4W-aa-2lb" firstAttribute="bottom" secondItem="BO0-BF-21o" secondAttribute="bottom" constant="7" id="xHt-kz-C9h"/>
+                <constraint firstItem="8Nh-BT-bZZ" firstAttribute="top" secondItem="bTM-st-sEV" secondAttribute="bottom" id="yRl-fw-PnK"/>
+                <constraint firstAttribute="bottom" secondItem="vkb-bp-goG" secondAttribute="bottom" constant="1" id="ztc-Hi-5HW"/>
+            </constraints>
+            <connections>
+                <outlet property="addImageLabel" destination="8Nh-BT-bZZ" id="GIa-Vu-xNZ"/>
+                <outlet property="cameraImageView" destination="bTM-st-sEV" id="3O3-Hk-mXt"/>
+                <outlet property="closeImageView" destination="BO0-BF-21o" id="Mhh-pc-ee6"/>
+                <outlet property="closeView" destination="M4W-aa-2lb" id="xzt-5z-rqN"/>
+                <outlet property="imageActivityIndicator" destination="pR5-Yq-29h" id="B1s-qA-jiC"/>
+                <outlet property="mainImageView" destination="vkb-bp-goG" id="Fcv-Gu-aJm"/>
+                <outlet property="trashButton" destination="jxp-qG-PIn" id="1tG-0f-M4L"/>
+            </connections>
+            <point key="canvasLocation" x="488" y="362"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="add_image_camera" width="85" height="85"/>
+        <image name="add_image_dash" width="110" height="110"/>
+        <image name="profile_trash" width="85" height="85"/>
+    </resources>
+</document>

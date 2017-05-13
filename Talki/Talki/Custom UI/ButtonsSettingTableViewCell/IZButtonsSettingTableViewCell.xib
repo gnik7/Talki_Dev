@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Display-Light.ttf">
+            <string>SFUIDisplay-Light</string>
+            <string>SFUIDisplay-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IZButtonsSettingTableViewCell" customModule="Talki" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IZButtonsSettingTableViewCell" id="oOJ-i4-DvH" customClass="IZButtonsSettingTableViewCell" customModule="Talki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oOJ-i4-DvH" id="JI1-ct-HKF">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHc-oc-5Ws">
+                        <rect key="frame" x="10" y="12" width="300" height="30"/>
+                        <color key="backgroundColor" red="0.0" green="0.69803921568627447" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="18"/>
+                        <state key="normal" title="Log Out">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="logoutButtonPressed:" destination="oOJ-i4-DvH" eventType="touchUpInside" id="PE6-nN-4ep"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isp-Vo-Sda">
+                        <rect key="frame" x="0.0" y="42" width="320" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="3Dv-f9-6sG"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-el-JWA">
+                        <rect key="frame" x="10" y="57" width="300" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="18"/>
+                        <state key="normal" title="Delete Account">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteAccountButtonPressed:" destination="oOJ-i4-DvH" eventType="touchUpInside" id="cFq-ao-fcf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YHc-oc-5Ws" firstAttribute="leading" secondItem="JI1-ct-HKF" secondAttribute="leading" constant="10" id="0XC-wY-UB5"/>
+                    <constraint firstAttribute="trailing" secondItem="Isp-Vo-Sda" secondAttribute="trailing" id="1Lh-K2-bd8"/>
+                    <constraint firstItem="Isp-Vo-Sda" firstAttribute="centerY" secondItem="JI1-ct-HKF" secondAttribute="centerY" id="1Xa-2n-7Su"/>
+                    <constraint firstItem="Isp-Vo-Sda" firstAttribute="leading" secondItem="JI1-ct-HKF" secondAttribute="leading" id="Lsb-i8-Mop"/>
+                    <constraint firstAttribute="trailing" secondItem="UFu-el-JWA" secondAttribute="trailing" constant="10" id="UsY-lL-nQV"/>
+                    <constraint firstItem="UFu-el-JWA" firstAttribute="leading" secondItem="JI1-ct-HKF" secondAttribute="leading" constant="10" id="V8o-Rc-7cD"/>
+                    <constraint firstItem="UFu-el-JWA" firstAttribute="top" secondItem="Isp-Vo-Sda" secondAttribute="bottom" id="e6O-cu-TzV"/>
+                    <constraint firstItem="Isp-Vo-Sda" firstAttribute="top" secondItem="YHc-oc-5Ws" secondAttribute="bottom" id="hCg-kL-CME"/>
+                    <constraint firstItem="YHc-oc-5Ws" firstAttribute="height" secondItem="JI1-ct-HKF" secondAttribute="height" multiplier="0.3" id="sO7-fB-3UB"/>
+                    <constraint firstAttribute="trailing" secondItem="YHc-oc-5Ws" secondAttribute="trailing" constant="10" id="uK6-K9-mWf"/>
+                    <constraint firstItem="UFu-el-JWA" firstAttribute="height" secondItem="YHc-oc-5Ws" secondAttribute="height" id="vbE-Gd-T9X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteAccountButton" destination="UFu-el-JWA" id="Kye-ai-71H"/>
+                <outlet property="logoutButton" destination="YHc-oc-5Ws" id="RHq-ec-vbQ"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="374"/>
+        </tableViewCell>
+    </objects>
+</document>

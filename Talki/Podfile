@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Talki' do
+    pod 'TextFieldEffects'
+    pod 'Kingfisher'
+    pod 'Alamofire'
+    pod 'AlamofireObjectMapper'
+    pod 'SwiftyJSON'
+    pod 'TTRangeSlider'
+    pod 'Socket.IO-Client-Swift'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
+end

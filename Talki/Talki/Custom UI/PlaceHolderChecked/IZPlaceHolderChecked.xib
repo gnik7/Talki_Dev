@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IZPlaceHolderChecked" customModule="Talki" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="IZPlaceHolderChecked" id="iN0-l3-epB" customClass="IZPlaceHolderChecked" customModule="Talki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYY-Mp-QyV">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rS-Uf-rKU" userLabel="Custom Alert View">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_alert" translatesAutoresizingMaskIntoConstraints="NO" id="e8I-W6-gUl">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="e8I-W6-gUl" secondAttribute="height" multiplier="240:175" id="Wi5-vI-wiw"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="e8I-W6-gUl" firstAttribute="centerY" secondItem="9rS-Uf-rKU" secondAttribute="centerY" id="2GL-mV-6uf"/>
+                        <constraint firstItem="e8I-W6-gUl" firstAttribute="height" secondItem="9rS-Uf-rKU" secondAttribute="height" id="7py-88-D9S"/>
+                        <constraint firstItem="e8I-W6-gUl" firstAttribute="centerX" secondItem="9rS-Uf-rKU" secondAttribute="centerX" id="Pf5-9A-zv8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GYY-Mp-QyV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0gM-nT-zQ5"/>
+                <constraint firstItem="9rS-Uf-rKU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NO4-Xs-L7l"/>
+                <constraint firstAttribute="bottom" secondItem="GYY-Mp-QyV" secondAttribute="bottom" id="adc-Kd-F6X"/>
+                <constraint firstAttribute="trailing" secondItem="9rS-Uf-rKU" secondAttribute="trailing" id="bAc-wR-UN3"/>
+                <constraint firstAttribute="trailing" secondItem="GYY-Mp-QyV" secondAttribute="trailing" id="fN7-Kv-owD"/>
+                <constraint firstItem="GYY-Mp-QyV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gvh-lT-RBf"/>
+                <constraint firstItem="9rS-Uf-rKU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h1e-kg-bpb"/>
+                <constraint firstItem="9rS-Uf-rKU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.2" id="oMK-qC-vV3"/>
+                <constraint firstItem="GYY-Mp-QyV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oZL-km-HMn"/>
+                <constraint firstItem="GYY-Mp-QyV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="okq-hF-ylr"/>
+            </constraints>
+            <connections>
+                <outlet property="checkImageView" destination="e8I-W6-gUl" id="Xvc-0R-v7g"/>
+            </connections>
+            <point key="canvasLocation" x="267.5" y="326.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked_alert" width="42" height="42"/>
+    </resources>
+</document>

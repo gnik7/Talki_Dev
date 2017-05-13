@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SFUIText-Light.otf">
+            <string>SFUIText-Light</string>
+        </mutableArray>
+        <mutableArray key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IZGenderSettingTableViewCell" customModule="Talki" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IZGenderSettingTableViewCell" id="8Ac-O5-gQg" customClass="IZGenderSettingTableViewCell" customModule="Talki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Ac-O5-gQg" id="xoc-wS-e1O">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-ac-5R1">
+                        <rect key="frame" x="10" y="17" width="56" height="20"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI  Text" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-0Y-9yk">
+                        <rect key="frame" x="10" y="34" width="63" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="14"/>
+                        <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="right_arrow_settings" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-S6-ClJ">
+                        <rect key="frame" x="271" y="17" width="34" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rAM-S6-ClJ" secondAttribute="height" multiplier="1:1" id="1MZ-Ng-JN9"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-zs-kET">
+                        <rect key="frame" x="261" y="0.0" width="59" height="69"/>
+                        <connections>
+                            <action selector="typeGenderButtonPressed:" destination="8Ac-O5-gQg" eventType="touchUpInside" id="FeC-wh-E4r"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyc-kZ-Mwq">
+                        <rect key="frame" x="0.0" y="68" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wFt-QN-Jbx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xOy-zs-kET" firstAttribute="leading" secondItem="rAM-S6-ClJ" secondAttribute="leading" constant="-10" id="1ha-uT-tDw"/>
+                    <constraint firstItem="tyc-kZ-Mwq" firstAttribute="leading" secondItem="xoc-wS-e1O" secondAttribute="leading" id="3hi-zj-cKT"/>
+                    <constraint firstAttribute="trailing" secondItem="xOy-zs-kET" secondAttribute="trailing" id="4kg-cG-vgr"/>
+                    <constraint firstItem="XUY-ac-5R1" firstAttribute="leading" secondItem="xoc-wS-e1O" secondAttribute="leading" constant="10" id="9av-7e-6Qn"/>
+                    <constraint firstAttribute="bottom" secondItem="tyc-kZ-Mwq" secondAttribute="bottom" id="Ggj-Nd-owO"/>
+                    <constraint firstItem="LUe-0Y-9yk" firstAttribute="leading" secondItem="xoc-wS-e1O" secondAttribute="leading" constant="10" id="XDd-CZ-5ZU"/>
+                    <constraint firstAttribute="trailing" secondItem="rAM-S6-ClJ" secondAttribute="trailing" constant="15" id="XMA-rg-6OK"/>
+                    <constraint firstItem="rAM-S6-ClJ" firstAttribute="height" secondItem="xoc-wS-e1O" secondAttribute="height" multiplier="0.5" id="XYE-a9-FIo"/>
+                    <constraint firstItem="LUe-0Y-9yk" firstAttribute="centerY" secondItem="xoc-wS-e1O" secondAttribute="centerY" constant="8" id="eBd-Dw-oyg"/>
+                    <constraint firstAttribute="trailing" secondItem="tyc-kZ-Mwq" secondAttribute="trailing" id="gnO-r9-h3m"/>
+                    <constraint firstItem="rAM-S6-ClJ" firstAttribute="centerY" secondItem="xoc-wS-e1O" secondAttribute="centerY" id="uOj-71-Go7"/>
+                    <constraint firstAttribute="bottom" secondItem="xOy-zs-kET" secondAttribute="bottom" id="wuD-ro-CFL"/>
+                    <constraint firstItem="XUY-ac-5R1" firstAttribute="centerY" secondItem="xoc-wS-e1O" secondAttribute="centerY" constant="-8" id="xbv-iv-tez"/>
+                    <constraint firstItem="xOy-zs-kET" firstAttribute="top" secondItem="xoc-wS-e1O" secondAttribute="top" id="yfW-Bm-kPU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="genderTypeLabel" destination="LUe-0Y-9yk" id="sQB-5N-s39"/>
+                <outlet property="titleLabel" destination="XUY-ac-5R1" id="vOe-aq-onD"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="217"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow_settings" width="42" height="42"/>
+    </resources>
+</document>
